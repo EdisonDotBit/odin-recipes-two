@@ -80,8 +80,6 @@ li a {
 }
 
 .main {
-    flex: 1;
-    min-height: 500px;
     width: 100%;
     padding: 80px 150px;
 }
@@ -97,11 +95,20 @@ li a {
     margin-bottom: 18px;
 }
 
-.hero p {
+.hero p,
+.recipes p {
     color: var(--text-gray);
     font-size: 20px;
 }
 
+.recipes {
+    margin-top: 150px;
+}
 
+.recipes h2 {
+    font-size: 30px;
+    color: var(--heading-gray);
+    margin-bottom: 16px;
+}
 
 
