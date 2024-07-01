@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: 'Norse Bold';
+    src: url(../fonts/norsebold.otf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --logo-color: #a9792b;
+    --text-gray: #6b7280;
+    --heading-gray: #1f2937;
+
+}
+
+body {
+    height: 100vh;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li a {
+    list-style-type: none;
+    color: black;
+}
+
+.header {
+    min-height: 100px;
+    width: 100%;
+    padding: 10px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #cfd1d8;
+}
+
+.logo {
+    font-size: 60px; 
+    color: var(--logo-color);
+    font-family: 'Norse Bold';
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li {
+    list-style: none;
+    position: relative;
+}
+
+.navbar li a {
+    color: var(--text-gray);
+    font-size: 18px;
+    padding: 20px 10px;
+}
+
+.navbar li a:hover {
+    color: var(--logo-color);
+    border-bottom: 2px solid var(--logo-color);    
+}
+
+.navbar li .active {
+    color: var(--logo-color);
+}
+
+.main {
+    flex: 1;
+    min-height: 500px;
+    width: 100%;
+    padding: 80px 150px;
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 40px;
+    color: var(--heading-gray);
+    font-weight: 500;
+    margin-bottom: 18px;
+}
+
+.hero p {
+    color: var(--text-gray);
+    font-size: 20px;
+}
+
+
+
+
