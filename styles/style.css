@@ -15,6 +15,7 @@
     --logo-color: #a9792b;
     --text-gray: #6b7280;
     --heading-gray: #1f2937;
+    --bg-gray-50: #f9fafb;
 
 }
 
@@ -27,6 +28,7 @@ body {
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 ul {
@@ -80,12 +82,20 @@ li a {
 }
 
 .main {
+    flex: 1;
     width: 100%;
     padding: 80px 150px;
+    background-color: var(--bg-gray-50);
 }
 
 .hero {
     text-align: center;
+}
+
+.hero img {
+    margin-top: 40px;
+    height: auto;
+    width: 300px;
 }
 
 .hero h1 {
@@ -102,7 +112,7 @@ li a {
 }
 
 .recipes {
-    margin-top: 150px;
+    margin-top: 30px;
 }
 
 .recipes h2 {
@@ -111,4 +121,53 @@ li a {
     margin-bottom: 16px;
 }
 
+.card-container {
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
 
+.card:hover h3 {
+    border-bottom: 0.5px solid var(--logo-color);
+    display: inline-block;
+}
+
+.card {
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    padding: 26px 16px;
+    border: 1px solid rgb(229, 231, 235);
+    border-radius: 16px;
+    gap: 16px;
+    box-shadow: rgba(0, 0, 0, 1);
+}
+
+.card img {
+    height: 256px;
+    width: 450px;
+    border-radius: 6px;
+}
+
+.card-title p {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.card-title h3 {
+    font-size: 26px;
+}
+
+.footer {
+    min-height: 50px;
+    border-top: 1px solid #cfd1d8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-gray);
+    padding: 10px 50px;
+}
